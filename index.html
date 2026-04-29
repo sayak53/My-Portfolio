@@ -1,40 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <title>My Portfolio</title>
 
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="style.css">
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
-</head>
-<body class="bg-white text-black">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <!-- HERO SECTION -->
-  <section class="h-screen flex flex-col justify-center items-center text-center px-4">
+  <body class="bg-gray-100 text-black">
+    <!-- HERO SECTION -->
+    <section
+      class="min-h-[60vh] flex flex-col justify-center items-center text-center px-4 pt-10"
+    >
+      <h1
+        class="text-5xl md:text-7xl font-extrabold leading-[1.2] pb-2 tracking-tight bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent animate-fadeIn"
+      >
+        Hi, I'm Sayak
+      </h1>
 
-  <!-- Heading -->
-  <h1 class="text-5xl md:text-7xl font-extrabold leading-[1.2] pb-2 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">
-    Hi, I'm Sayak
-  </h1>
+      <p
+        class="mt-6 text-gray-600 text-lg md:text-xl tracking-wide animate-fadeIn delay-200"
+      >
+        Frontend Developer
+      </p>
 
-  <!-- Subtext -->
-  <p class="mt-6 text-gray-600 text-lg md:text-xl tracking-wide animate-fadeIn delay-200">
-    Frontend Developer
-  </p>
+      <button
+        class="mt-8 px-8 py-3 rounded-xl bg-black text-white font-medium hover:bg-gray-800 transition duration-300 transform hover:scale-105 animate-fadeIn delay-400"
+      >
+        View Projects
+      </button>
+    </section>
 
-  <!-- Button -->
-  <button class="mt-8 px-8 py-3 rounded-xl bg-black text-white font-medium 
-  hover:bg-gray-800 transition duration-300 transform hover:scale-105 animate-fadeIn delay-400">
-    View Projects
-  </button>
+    <!-- ABOUT SECTION -->
+    <section class="py-12 px-6 hidden-section">
+      <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-4 items-center">
+        <!-- Left -->
+        <div class="flex justify-center md:justify-start">
+          <div
+            class="w-56 h-56 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-md"
+          >
+            <img
+              src="Professiona_Pic.png"
+              alt="Sayak"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
 
-</section>
+        <!-- Right -->
+        <div>
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
 
-<!-- ABOUT SECTION -->
+          <p class="text-gray-600 leading-relaxed">
+            I'm a passionate frontend developer who loves building clean and
+            interactive web experiences. I focus on writing efficient code and
+            creating visually appealing interfaces using modern technologies.
+          </p>
 
+          <p class="mt-4 text-gray-600 leading-relaxed">
+            Currently learning and improving my skills in JavaScript, Tailwind,
+            and React to build real-world projects.
+          </p>
 
-  <script src="script.js"></script>
-</body>
+          <button
+            class="mt-6 px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition"
+          >
+            Download Resume
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>

@@ -20,3 +20,14 @@
 .delay-400 {
   animation-delay: 0.4s;
 }
+
+.hidden-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.show-section {
+  opacity: 1;
+  transform: translateY(0);
+}
