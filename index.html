@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <title>My Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
 
     <!-- Tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -231,7 +235,6 @@
           I'm currently open to opportunities and collaborations. Feel free to
           reach out!
         </p>
-
         <!-- Contact Links -->
         <div
           class="flex flex-col md:flex-row items-center justify-center gap-4"
@@ -239,8 +242,9 @@
           <!-- Email -->
           <a
             href="mailto:sayakchakraborty928@gmail.com"
-            class="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition"
+            class="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition flex items-center gap-2"
           >
+            <i data-lucide="mail"></i>
             Email Me
           </a>
 
@@ -248,8 +252,9 @@
           <a
             href="https://github.com/sayak53"
             target="_blank"
-            class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-100 transition"
+            class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-100 transition flex items-center gap-2 text-black"
           >
+            <i class="fa-brands fa-github text-lg"></i>
             GitHub
           </a>
 
@@ -257,13 +262,18 @@
           <a
             href="https://www.linkedin.com/in/sayak-chakraborty-b5403a32a/"
             target="_blank"
-            class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-100 transition"
+            class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-100 transition flex items-center gap-2 text-black"
           >
+            <i class="fa-brands fa-linkedin text-lg"></i>
             LinkedIn
           </a>
         </div>
       </div>
     </section>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
