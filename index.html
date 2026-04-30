@@ -16,8 +16,30 @@
   </head>
 
   <body class="bg-gray-100 text-black">
+    <!-- NAVBAR -->
+    <nav
+      class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50"
+    >
+      <div
+        class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4"
+      >
+        <!-- Logo -->
+        <h1 class="text-xl font-bold text-blue-600">Portfolio</h1>
+
+        <!-- Links -->
+        <div class="hidden md:flex gap-8 text-gray-700 font-medium">
+          <a href="#home" class="hover:text-black transition">Home</a>
+          <a href="#about" class="hover:text-black transition">About</a>
+          <a href="#skills" class="hover:text-black transition">Skills</a>
+          <a href="#projects" class="hover:text-black transition">Projects</a>
+          <a href="#contact" class="hover:text-black transition">Contact</a>
+        </div>
+      </div>
+    </nav>
+
     <!-- HERO SECTION -->
     <section
+      id="home"
       class="min-h-[60vh] flex flex-col justify-center items-center text-center px-4 pt-10"
     >
       <h1
@@ -45,7 +67,7 @@
     </section>
 
     <!-- ABOUT SECTION -->
-    <section class="py-12 px-6 hidden-section">
+    <section id="about" class="py-12 px-6 hidden-section">
       <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-4 items-center">
         <!-- Left -->
         <div class="flex justify-center md:justify-start">
@@ -85,7 +107,7 @@
     </section>
 
     <!-- SKILLS SECTION -->
-    <section class="py-16 px-6 hidden-section">
+    <section id="skills" class="py-16 px-6 hidden-section">
       <div class="max-w-5xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Skills</h2>
 
@@ -270,6 +292,7 @@
         </div>
       </div>
     </section>
+
     <script src="script.js"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <script>
