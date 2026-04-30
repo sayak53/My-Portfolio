@@ -31,7 +31,12 @@
       <button
         class="mt-8 px-8 py-3 rounded-xl bg-black text-white font-medium hover:bg-gray-800 transition duration-300 transform hover:scale-105 animate-fadeIn delay-400"
       >
-        View Projects
+        <a
+          href="#projects"
+          class="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition"
+        >
+          View Projects
+        </a>
       </button>
     </section>
 
@@ -121,7 +126,7 @@
     </section>
 
     <!-- PROJECTS SECTION -->
-    <section class="py-16 px-6">
+    <section id="projects" class="py-16 px-6">
       <div class="max-w-4xl mx-auto">
         <!-- Heading -->
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
@@ -142,14 +147,16 @@
                 class="w-full h-auto max-h-72 object-contain mx-auto transition duration-300 group-hover:scale-105"
               />
 
-              <!-- Overlay -->
-              <div
+              <!-- Clickable Overlay -->
+              <a
+                href="https://student-manager-sayak.netlify.app/"
+                target="_blank"
                 class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center rounded-t-xl"
               >
                 <span class="text-white text-lg font-semibold">
                   View Project
                 </span>
-              </div>
+              </a>
             </div>
 
             <!-- Content -->
