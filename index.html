@@ -1,355 +1,331 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Sayak Chakraborty | Frontend Developer</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    />
 
-    <link
-      rel="icon"
-      href="data:image/svg+xml,
+<head>
+  <meta charset="UTF-8" />
+  <title>Sayak Chakraborty | Frontend Developer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="icon" href="data:image/svg+xml,
 <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'>
   <rect width='100' height='100' fill='black'/>
   <text x='50' y='65' font-size='60' text-anchor='middle' fill='white' font-family='Arial'>S</text>
-</svg>"
-    />
+</svg>" />
 
-    <!-- Tailwind -->
-    <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-  <body class="bg-gray-100 text-black">
-    <!-- NAVBAR -->
-    <nav
-      class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50"
-    >
-      <div
-        class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4"
-      >
-        <!-- Logo -->
-        <h1 class="text-xl font-bold text-blue-600">Portfolio</h1>
+<body class="bg-gray-100 text-black">
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+      <!-- Logo -->
+      <h1 class="text-xl font-bold text-blue-600">Portfolio</h1>
 
-        <!-- Links -->
-        <div class="hidden md:flex gap-8 text-gray-700 font-medium">
-          <a href="#home" class="relative group">
-            Home
-            <span
-              class="absolute left-0 -bottom-1 w-0 h-[2px] bg-black transition-all group-hover:w-full"
-            ></span>
-          </a>
-          <a href="#about" class="relative group">
-            About
-            <span
-              class="absolute left-0 -bottom-1 w-0 h-[2px] bg-black transition-all group-hover:w-full"
-            ></span>
-          </a>
+      <!-- Links -->
+      <div class="hidden md:flex gap-8 text-gray-700 font-medium">
+        <a href="#home" class="relative group">
+          Home
+          <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-black transition-all group-hover:w-full"></span>
+        </a>
+        <a href="#about" class="relative group">
+          About
+          <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-black transition-all group-hover:w-full"></span>
+        </a>
 
-          <a href="#projects" class="relative group">
-            Projects
-            <span
-              class="absolute left-0 -bottom-1 w-0 h-[2px] bg-black transition-all group-hover:w-full"
-            ></span>
-          </a>
+        <a href="#projects" class="relative group">
+          Projects
+          <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-black transition-all group-hover:w-full"></span>
+        </a>
 
-          <a href="#skills" class="relative group">
-            Skills
-            <span
-              class="absolute left-0 -bottom-1 w-0 h-[2px] bg-black transition-all group-hover:w-full"
-            ></span>
-          </a>
+        <a href="#skills" class="relative group">
+          Skills
+          <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-black transition-all group-hover:w-full"></span>
+        </a>
 
-          <a href="#contact" class="relative group">
-            Contact
-            <span
-              class="absolute left-0 -bottom-1 w-0 h-[2px] bg-black transition-all group-hover:w-full"
-            ></span>
-          </a>
-        </div>
+        <a href="#contact" class="relative group">
+          Contact
+          <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-black transition-all group-hover:w-full"></span>
+        </a>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <!-- HERO SECTION -->
-    <section
-      id="home"
-      class="min-h-[60vh] flex flex-col justify-center items-center text-center px-4 pt-24"
-    >
-      <!-- Heading -->
-      <h1
-        class="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text leading-tight"
-      >
-        Hi, I'm Sayak
-      </h1>
+  <!-- HERO SECTION -->
+  <section id="home" class="min-h-[60vh] flex flex-col justify-center items-center text-center px-4 pt-24">
+    <!-- Heading -->
+    <h1
+      class="text-4xl md:text-6xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text leading-tight">
+      Hi, I'm Sayak
+    </h1>
 
-      <!-- Subtitle -->
-      <p class="text-gray-600 mt-4 text-lg">Frontend Developer</p>
+    <!-- Subtitle -->
+    <p class="text-gray-600 mt-4 text-lg">Frontend Developer</p>
 
-      <!-- NEW: Supporting Line -->
-      <p class="text-gray-500 mt-2 text-base md:text-lg max-w-xl">
-        I turn ideas into clean, responsive, user-friendly web experiences.
-      </p>
+    <!-- NEW: Supporting Line -->
+    <p class="text-gray-500 mt-2 text-base md:text-lg max-w-xl">
+      I turn ideas into clean, responsive, user-friendly web experiences.
+    </p>
 
-      <!-- Button -->
-      <a
-        href="#projects"
-        class="mt-6 px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition"
-      >
-        View Projects
+    <!-- Button -->
+    <a href="#projects" class="mt-6 px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition">
+      View Projects
+    </a>
+
+    <!-- NEW: Social Icons -->
+    <div class="flex justify-center gap-6 mt-6 text-xl text-gray-600">
+      <a href="https://github.com/sayak53" target="_blank" class="hover:text-black transition">
+        <i class="fa-brands fa-github"></i>
       </a>
 
-      <!-- NEW: Social Icons -->
-      <div class="flex justify-center gap-6 mt-6 text-xl text-gray-600">
-        <a
-          href="https://github.com/sayak53"
-          target="_blank"
-          class="hover:text-black transition"
-        >
-          <i class="fa-brands fa-github"></i>
-        </a>
+      <a href="https://www.linkedin.com/in/sayak-chakraborty-b5403a32a/" target="_blank"
+        class="hover:text-black transition">
+        <i class="fa-brands fa-linkedin"></i>
+      </a>
+    </div>
+  </section>
 
-        <a
-          href="https://www.linkedin.com/in/sayak-chakraborty-b5403a32a/"
-          target="_blank"
-          class="hover:text-black transition"
-        >
-          <i class="fa-brands fa-linkedin"></i>
-        </a>
-      </div>
-    </section>
-
-    <!-- ABOUT SECTION -->
-    <section id="about" class="py-12 px-6 hidden-section">
-      <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-4 items-center">
-        <!-- Left -->
-        <div class="flex justify-center md:justify-start">
-          <div
-            class="w-56 h-56 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-md"
-          >
-            <img
-              src="Professiona_Pic.png"
-              alt="Sayak"
-              class="w-full h-full object-cover"
-            />
-          </div>
-        </div>
-
-        <!-- Right -->
-        <div>
-          <h2 class="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
-
-          <p class="text-gray-600 leading-relaxed">
-            I'm a passionate frontend developer who loves building clean and
-            interactive web experiences. I focus on writing efficient code and
-            creating visually appealing interfaces using modern technologies.
-          </p>
-
-          <p class="mt-4 text-gray-600 leading-relaxed">
-            Currently learning and improving my skills in JavaScript, Tailwind,
-            and React to build real-world projects.
-          </p>
-
-          <button
-            class="mt-6 px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition"
-          >
-            Download Resume
-          </button>
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-12 px-6 hidden-section">
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-4 items-center">
+      <!-- Left -->
+      <div class="flex justify-center md:justify-start">
+        <div class="w-56 h-56 md:w-64 md:h-64 rounded-2xl overflow-hidden shadow-md">
+          <img src="Professiona_Pic.png" alt="Sayak" class="w-full h-full object-cover" />
         </div>
       </div>
-    </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="py-16 px-6 bg-gray-50">
-      <div class="max-w-5xl mx-auto">
-        <!-- Heading -->
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Skills</h2>
+      <!-- Right -->
+      <div>
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
 
-        <!-- Grid -->
-        <div class="grid md:grid-cols-3 gap-8">
-          <!-- Frontend -->
-          <div
-            class="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center"
-          >
-            <i class="fa-solid fa-code text-2xl mb-4 text-blue-500"></i>
-            <h3 class="text-xl font-semibold mb-3">Frontend</h3>
-            <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, Tailwind</p>
-          </div>
+        <p class="text-gray-600 leading-relaxed">
+          I'm a passionate frontend developer who loves building clean and
+          interactive web experiences. I focus on writing efficient code and
+          creating visually appealing interfaces using modern technologies.
+        </p>
 
-          <!-- Programming -->
-          <div
-            class="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-2 transition duration-300 text-center"
-          >
-            <i class="fa-solid fa-laptop-code text-2xl mb-4 text-green-500"></i>
-            <h3 class="text-xl font-semibold mb-3">Programming</h3>
-            <p class="text-gray-600 text-sm">C, Pyrhon, Java</p>
-          </div>
+        <p class="mt-4 text-gray-600 leading-relaxed">
+          Currently learning and improving my skills in JavaScript, Tailwind,
+          and React to build real-world projects.
+        </p>
 
-          <!-- Database -->
-          <div
-            class="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-2 transition duration-300 text-center"
-          >
-            <i class="fa-solid fa-database text-2xl mb-4 text-purple-500"></i>
-            <h3 class="text-xl font-semibold mb-3">Database</h3>
-            <p class="text-gray-600 text-sm">MySQL, MongoDB</p>
-          </div>
+        <button class="mt-6 px-6 py-2 bg-black text-white rounded-lg hover:bg-gray-800 transition">
+          Download Resume
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="py-16 px-6 bg-gray-50">
+    <div class="max-w-5xl mx-auto">
+      <!-- Heading -->
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Skills</h2>
+
+      <!-- Grid -->
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Frontend -->
+        <div
+          class="bg-white rounded-xl p-6 shadow-sm hover:shadow-xl hover:-translate-y-2 transition duration-300 text-center">
+          <i class="fa-solid fa-code text-2xl mb-4 text-blue-500"></i>
+          <h3 class="text-xl font-semibold mb-3">Frontend</h3>
+          <p class="text-gray-600 text-sm">HTML, CSS, JavaScript, Tailwind</p>
+        </div>
+
+        <!-- Programming -->
+        <div
+          class="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-2 transition duration-300 text-center">
+          <i class="fa-solid fa-laptop-code text-2xl mb-4 text-green-500"></i>
+          <h3 class="text-xl font-semibold mb-3">Programming</h3>
+          <p class="text-gray-600 text-sm">C, Pyrhon, Java</p>
+        </div>
+
+        <!-- Database -->
+        <div
+          class="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg hover:-translate-y-2 transition duration-300 text-center">
+          <i class="fa-solid fa-database text-2xl mb-4 text-purple-500"></i>
+          <h3 class="text-xl font-semibold mb-3">Database</h3>
+          <p class="text-gray-600 text-sm">MySQL, MongoDB</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PROJECTS SECTION -->
-    <section id="projects" class="py-16 px-6">
-      <div class="max-w-4xl mx-auto">
-        <!-- Heading -->
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
-          Projects
-        </h2>
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="py-16 px-6">
+    <div class="max-w-4xl mx-auto">
+      <!-- Heading -->
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">
+        Projects
+      </h2>
 
-        <!-- Grid -->
-        <div class="grid md:grid-cols-2 gap-8">
-          <!-- Project 1 -->
-          <div
-            class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border hover:border-gray-200 transition duration-300"
-          >
-            <!-- Image Section -->
-            <div class="relative bg-gray-100 p-4 group">
-              <img
-                src="Student_Manager.png"
-                alt="Student Manager"
-                class="w-full h-auto max-h-72 object-contain mx-auto transition duration-300 group-hover:scale-105"
-              />
+      <!-- Grid -->
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Project 1 -->
+        <div
+          class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border hover:border-gray-200 transition duration-300">
+          <!-- Image Section -->
+          <!-- Image -->
+          <div class="relative bg-gray-100 h-80 p-4 group flex items-center justify-center">
 
-              <!-- Overlay -->
-              <a
-                href="https://student-manager-sayak.netlify.app/"
-                target="_blank"
-                class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center rounded-t-xl"
-              >
-                <span class="text-white text-lg font-semibold tracking-wide">
-                  View Project →
-                </span>
+            <img src="Student_Manager.png" alt="Student Manager"
+              class="max-h-full object-contain transition duration-300 group-hover:scale-105" />
+
+            <!-- Overlay -->
+            <a href="https://student-manager-sayak.netlify.app/" target="_blank"
+              class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+              <span class="text-white text-lg font-semibold tracking-wide">
+                View Project →
+              </span>
+            </a>
+
+          </div>
+
+          <!-- Content -->
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold mb-2">Student Manager</h3>
+
+            <p class="text-gray-600 mb-4">
+              A full-stack student management system with CRUD operations,
+              search, filter, and sorting features. Built using React,
+              Node.js, and MongoDB.
+            </p>
+
+            <!-- Tech tags -->
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-200 px-2 py-1 rounded">React</span>
+              <span class="text-xs bg-gray-200 px-2 py-1 rounded">Node.js</span>
+              <span class="text-xs bg-gray-200 px-2 py-1 rounded">MongoDB</span>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex gap-4">
+              <a href="https://student-manager-sayak.netlify.app/" target="_blank"
+                class="px-4 py-2 bg-black text-white rounded-lg text-sm hover:bg-gray-800 transition">
+                Live
+              </a>
+
+              <a href="https://github.com/sayak53/Student-Management-System" target="_blank"
+                class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100 transition">
+                GitHub
               </a>
             </div>
-
-            <!-- Content -->
-            <div class="p-6">
-              <h3 class="text-2xl font-semibold mb-2">Student Manager</h3>
-
-              <p class="text-gray-600 mb-4">
-                A full-stack student management system with CRUD operations,
-                search, filter, and sorting features. Built using React,
-                Node.js, and MongoDB.
-              </p>
-
-              <!-- Tech tags -->
-              <div class="flex flex-wrap gap-2 mb-4">
-                <span class="text-xs bg-gray-200 px-2 py-1 rounded">React</span>
-                <span class="text-xs bg-gray-200 px-2 py-1 rounded"
-                  >Node.js</span
-                >
-                <span class="text-xs bg-gray-200 px-2 py-1 rounded"
-                  >MongoDB</span
-                >
-              </div>
-
-              <!-- Buttons -->
-              <div class="flex gap-4">
-                <a
-                  href="https://student-manager-sayak.netlify.app/"
-                  target="_blank"
-                  class="px-4 py-2 bg-black text-white rounded-lg text-sm hover:bg-gray-800 transition"
-                >
-                  Live
-                </a>
-
-                <a
-                  href="https://github.com/sayak53/Student-Management-System"
-                  target="_blank"
-                  class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100 transition"
-                >
-                  GitHub
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 2 (Coming Soon) -->
-          <div
-            class="bg-white rounded-xl border border-dashed border-gray-300 flex items-center justify-center text-center p-6 hover:shadow-xl hover:-translate-y-2 transition duration-300"
-          >
-            <div>
-              <h3 class="text-xl font-semibold mb-2">Next Project</h3>
-
-              <p class="text-gray-600 text-sm mb-3">
-                Currently building something exciting...
-              </p>
-
-              <span class="text-xs bg-gray-200 px-3 py-1 rounded animate-pulse">
-                Coming Soon 🚀
-              </span>
-            </div>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- CONTACT SECTION -->
-    <section id="contact" class="py-16 px-6 bg-gray-50">
-      <div class="max-w-3xl mx-auto text-center">
-        <!-- Heading -->
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">Get In Touch</h2>
-
-        <p class="text-gray-600 mb-8">
-          I'm currently open to opportunities and collaborations. Feel free to
-          reach out!
-        </p>
-        <!-- Contact Links -->
+        <!-- Project 2 -->
         <div
-          class="flex flex-col md:flex-row items-center justify-center gap-4"
-        >
-          <!-- Email -->
-          <a
-            href="mailto:sayakchakraborty928@gmail.com"
-            class="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition flex items-center gap-2"
-          >
-            <i data-lucide="mail"></i>
-            Email Me
-          </a>
+          class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border hover:border-gray-200 transition duration-300">
 
-          <!-- GitHub -->
-          <a
-            href="https://github.com/sayak53"
-            target="_blank"
-            class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-100 transition flex items-center gap-2 text-black"
-          >
-            <i class="fa-brands fa-github text-lg"></i>
-            GitHub
-          </a>
+          <!-- Image -->
+          <!-- Image -->
+          <div class="relative bg-gray-100 h-80 p-4 group flex items-center justify-center">
 
-          <!-- LinkedIn -->
-          <a
-            href="https://www.linkedin.com/in/sayak-chakraborty-b5403a32a/"
-            target="_blank"
-            class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-100 transition flex items-center gap-2 text-black"
-          >
-            <i class="fa-brands fa-linkedin text-lg"></i>
-            LinkedIn
-          </a>
+            <img src="Resume-Analyzer.png" alt="Resume CV Analyzer"
+              class="max-h-full object-contain transition duration-300 group-hover:scale-105" />
+
+            <!-- Overlay -->
+            <a href="https://my-resume-cv-analyzer.netlify.app/" target="_blank"
+              class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+              <span class="text-white text-lg font-semibold tracking-wide">
+                View Project →
+              </span>
+            </a>
+
+          </div>
+
+          <!-- Content -->
+          <div class="p-6">
+
+            <h3 class="text-2xl font-semibold mb-2">
+              Resume CV Analyzer
+            </h3>
+
+            <p class="text-gray-700 mb-4">
+              AI-powered resume analyzer with resume parsing, match scoring,
+              experience estimation, and AI-style feedback.
+              Built using React, FastAPI, and NLP techniques.
+            </p>
+
+            <!-- Tech Tags -->
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="text-xs bg-gray-200 px-2 py-1 rounded">React</span>
+              <span class="text-xs bg-gray-200 px-2 py-1 rounded">FastAPI</span>
+              <span class="text-xs bg-gray-200 px-2 py-1 rounded">Python</span>
+              <span class="text-xs bg-gray-200 px-2 py-1 rounded">Tailwind</span>
+              <span class="text-xs bg-gray-200 px-2 py-1 rounded">NLP</span>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex gap-4">
+
+              <a href="https://my-resume-cv-analyzer.netlify.app/" target="_blank"
+                class="px-4 py-2 bg-black text-white rounded-lg text-sm hover:bg-gray-800 transition transform hover:-translate-y-1">
+                Live
+              </a>
+
+              <a href="https://github.com/sayak53/Resume-CV-Analyzer" target="_blank"
+                class="px-4 py-2 border border-gray-300 rounded-lg text-sm hover:bg-gray-100 transition transform hover:-translate-y-1">
+                GitHub
+              </a>
+
+            </div>
+
+          </div>
+
         </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-16 px-6 bg-gray-50">
+    <div class="max-w-3xl mx-auto text-center">
+      <!-- Heading -->
+      <h2 class="text-3xl md:text-4xl font-bold mb-6">Get In Touch</h2>
+
+      <p class="text-gray-600 mb-8">
+        I'm currently open to opportunities and collaborations. Feel free to
+        reach out!
+      </p>
+      <!-- Contact Links -->
+      <div class="flex flex-col md:flex-row items-center justify-center gap-4">
+        <!-- Email -->
+        <a href="mailto:sayakchakraborty928@gmail.com"
+          class="px-6 py-3 bg-black text-white rounded-lg hover:bg-gray-800 transition flex items-center gap-2">
+          <i data-lucide="mail"></i>
+          Email Me
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/sayak53" target="_blank"
+          class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-100 transition flex items-center gap-2 text-black">
+          <i class="fa-brands fa-github text-lg"></i>
+          GitHub
+        </a>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/sayak-chakraborty-b5403a32a/" target="_blank"
+          class="px-6 py-3 border border-gray-300 rounded-lg hover:bg-gray-100 transition flex items-center gap-2 text-black">
+          <i class="fa-brands fa-linkedin text-lg"></i>
+          LinkedIn
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <footer class="text-center py-6 text-gray-700 text-sm border-t">
-      © 2026 Sayak Chakraborty. Built with HTML, Tailwind & JavaScript.
-    </footer>
+  <footer class="text-center py-6 text-gray-700 text-sm border-t">
+    © 2026 Sayak Chakraborty. Built with HTML, Tailwind & JavaScript.
+  </footer>
 
-    <script src="script.js"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <script>
-      lucide.createIcons();
-    </script>
-  </body>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+
 </html>
